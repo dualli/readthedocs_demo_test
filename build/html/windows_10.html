@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Windows 10 软件环境 &mdash; lee 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to lee’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> lee
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Windows 10 软件环境</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">可用的包管理工具</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chocolatey">安装chocolatey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">安装软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">常用命令</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">没有在 Chocolatey 上提供的软件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">需要指定版本的软件</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">lee</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Windows 10 软件环境</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/windows_10.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#windows-10" id="id6">Windows 10 软件环境</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id1" id="id7">可用的包管理工具</a></p></li>
+<li><p><a class="reference internal" href="#chocolatey" id="id8">安装chocolatey</a></p></li>
+<li><p><a class="reference internal" href="#id2" id="id9">安装软件</a></p></li>
+<li><p><a class="reference internal" href="#id3" id="id10">常用命令</a></p></li>
+<li><p><a class="reference internal" href="#id4" id="id11">没有在 Chocolatey 上提供的软件</a></p></li>
+<li><p><a class="reference internal" href="#id5" id="id12">需要指定版本的软件</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="windows-10">
+<h1><a class="toc-backref" href="#id6">Windows 10 软件环境</a><a class="headerlink" href="#windows-10" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id7">可用的包管理工具</a><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>chocolatey 软件数量多,自动配置环境变量；可选portable或安装包安装，如安装
+git 可以选择 git.install 或者
+git.portable；进阶来说，因为采用安装包的形式安装，choco
+提供对安装包的控制，比如安装位置，比如 Everything
+可以选择是否以服务形式安装，之类。</p>
+<p>scoop 不需要管理员权限；只能便携(portable)安装；</p>
+</div>
+<div class="section" id="chocolatey">
+<h2><a class="toc-backref" href="#id8">安装chocolatey</a><a class="headerlink" href="#chocolatey" title="Permalink to this headline">¶</a></h2>
+<p>参考<a class="reference external" href="https://docs.chocolatey.org/en-us/choco/setup#more-install-options">CHOCOLATEY
+SETUP/INSTALL</a>
+1. 以管理员身份运行cmd 2. 安装</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">@</span><span class="s2">&quot;%SystemRoot%\System32\WindowsPowerShell</span><span class="se">\v</span><span class="s2">1.0\powershell.exe&quot;</span> <span class="o">-</span><span class="n">NoProfile</span> <span class="o">-</span><span class="n">InputFormat</span> <span class="kc">None</span> <span class="o">-</span><span class="n">ExecutionPolicy</span> <span class="n">Bypass</span> <span class="o">-</span><span class="n">Command</span> <span class="s2">&quot;[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString(&#39;https://chocolatey.org/install.ps1&#39;))&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">SET</span> <span class="s2">&quot;PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey</span><span class="se">\b</span><span class="s2">in&quot;</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>安装图形界面<code class="docutils literal notranslate"><span class="pre">choco</span> <span class="pre">install</span> <span class="pre">chocolateygui</span></code></p></li>
+</ol>
+</div>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id9">安装软件</a><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 日常软件</span>
+<span class="n">choco</span> <span class="n">install</span> <span class="o">--</span><span class="n">yes</span> <span class="n">tim</span> <span class="n">tencentmeeting</span> <span class="n">firefox</span> <span class="n">chrome</span> <span class="n">easyconnect</span> <span class="n">vlc</span> <span class="n">everything</span> <span class="n">teamviewer</span> <span class="n">vscode</span> <span class="n">notepadplusplus</span> <span class="n">winrar</span> <span class="n">FoxitReader</span> <span class="n">nutstore</span> <span class="n">netease</span><span class="o">-</span><span class="n">cloudmusic</span>
+<span class="c1"># 开发软件</span>
+<span class="n">choco</span> <span class="n">install</span> <span class="o">--</span><span class="n">yes</span> <span class="n">git</span> <span class="n">docker</span><span class="o">-</span><span class="n">desktop</span> <span class="n">winscp</span> <span class="n">mobaxterm</span> <span class="n">winscp</span> <span class="n">pycharm</span> <span class="n">eclipse</span><span class="o">-</span><span class="n">jee</span><span class="o">-</span><span class="n">luna</span> <span class="n">eclipse</span><span class="o">-</span><span class="n">cpp</span> <span class="n">dbeaver</span> <span class="n">nodejs</span> <span class="n">cmake</span> <span class="n">make</span>
+<span class="n">choco</span> <span class="n">install</span> <span class="o">--</span><span class="n">yes</span> <span class="n">mariadb</span> <span class="n">jdk8</span> <span class="n">StrawberryPerl</span>
+<span class="c1"># 科研软件</span>
+<span class="n">choco</span> <span class="n">install</span> <span class="o">--</span><span class="n">yes</span> <span class="n">zotero</span> <span class="n">anaconda3</span> <span class="n">Ghostscript</span> <span class="n">qgis</span>
+<span class="c1"># 文档软件</span>
+<span class="n">choco</span> <span class="n">install</span> <span class="o">--</span><span class="n">yes</span> <span class="n">pandoc</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id10">常用命令</a><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">choco</span> <span class="n">install</span> <span class="n">bazel</span> <span class="o">--</span><span class="n">version</span> <span class="mf">0.17</span><span class="o">.</span><span class="mi">2</span>
+<span class="n">choco</span> <span class="n">uninstall</span> <span class="n">winscp</span>     <span class="c1"># 卸载应用</span>
+<span class="n">choco</span> <span class="nb">list</span> <span class="o">--</span><span class="n">local</span>         <span class="c1"># 查看本地已安装应用</span>
+<span class="n">choco</span> <span class="n">outdated</span>             <span class="c1"># 检查应用更新</span>
+<span class="n">choco</span> <span class="n">upgrade</span> <span class="o">--</span><span class="n">yes</span> <span class="n">winscp</span> <span class="c1"># 升级应用</span>
+<span class="n">choco</span> <span class="n">upgrade</span> <span class="o">--</span><span class="n">yes</span> <span class="nb">all</span>    <span class="c1"># 升级所有程序</span>
+<span class="n">choco</span> <span class="n">info</span> <span class="n">tim</span>             <span class="c1"># 查看程序的详细信息</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id11">没有在 Chocolatey 上提供的软件</a><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>QQ 微信 有道词典 搜狗输入法 anyconnect visual studio office CAJViewer
+gmt hp打印机驱动 Mapinfo matlab 百度网盘</p>
+</div>
+<div class="section" id="id5">
+<h2><a class="toc-backref" href="#id12">需要指定版本的软件</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>cuda</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to lee’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, lili.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
